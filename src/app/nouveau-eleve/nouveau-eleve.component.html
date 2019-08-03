@@ -1,0 +1,49 @@
+<div class="container spacer">
+  <div class="panel panel-primary">
+    <div class="panel-heading"><h4>Nouveau &eacute;l&egrave;ve</h4></div>
+    <div class="panel-body">
+      <form #f="ngForm" (ngSubmit)="onSaveEleve(f.value)">
+
+        <div class="form-group">
+          <label class="custom-control-label">Ann&eacute;e scolaire:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.anneeScolaire" name="anneeScolaire" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">Pr&eacute;nom:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.prenom" name="prenom" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">Nom:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.nom" name="nom" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">Classe:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.classe" name="classe" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">N&deg; inscription:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.numInscription" name="numInscription" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">N&deg; dossier:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.numDossier" name="numDossier" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">N&deg; boite:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.numBoite" name="numBoite" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">Motif de sortie:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.motifSortie" name="motifSortie" required/>
+        </div>
+        <div class="form-group">
+          <label class="custom-control-label">Observations:</label>
+          <input class="form-control" type="text" [(ngModel)]="eleve.observation" name="observation" required/>
+        </div>
+
+        <button [disabled]="!f.valid" type="submit" class="btn btn-primary" >Enregistrer</button>
+
+      </form>
+    </div>
+  </div>
+</div>
