@@ -11,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import {EleveService} from '../services/eleve.service';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes:Routes = [
 
@@ -28,7 +29,8 @@ const appRoutes:Routes = [
     NouveauEleveComponent,
     EditEleveComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), FormsModule, HttpModule
